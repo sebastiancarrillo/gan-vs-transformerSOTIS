@@ -1,0 +1,12 @@
+# ignored folders
+*.pth
+*.tar
+*.log
+code/data/__pycache__/*
+code/model/__pycache__/*
+code/utils/__pycache__/*
+code/data/*.tar
+code/FD/*.pth
+code/dataset_example/*
+code/dataset_example/
+

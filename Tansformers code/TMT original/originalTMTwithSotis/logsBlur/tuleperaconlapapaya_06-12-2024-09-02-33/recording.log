@@ -1,0 +1,13 @@
+INFO: __CUDNN VERSION: 8907
+__Number CUDA Devices: 1
+__CUDA Device Name: NVIDIA RTX A5000
+__CUDA Device Total Memory [GB]: 23.6767578125
+INFO: Starting training:
+        Total_iters:     400000
+        Start_iters:     1
+        Batch size:      1
+        Learning rate:   0.0001
+        Training size:   3500
+        Validation size: 1184
+        Checkpoints:     /home/sebastian/sebas/TMT-main/logsBlur/tuleperaconlapapaya_06-12-2024-09-02-33/checkpoints
+    

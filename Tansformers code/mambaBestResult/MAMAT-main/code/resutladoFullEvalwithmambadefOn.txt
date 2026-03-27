@@ -1,0 +1,62 @@
+averages before procesing the data ------
+Average SSIM ALL: 0.6098
+Average PSNR ALL: 20.63 dB
+---------------
+Average SSIM Train data: 0.6043
+Average PSNR Train data: 20.64 dB
+---------------
+Average SSIM Val data: 0.6292
+Average PSNR Val data: 20.60 dB
+averages after procesing the data ------
+Average SSIM ALL: 0.6098
+Average PSNR ALL: 20.63 dB
+---------------
+Average SSIM Train data: 0.6043
+Average PSNR Train data: 20.64 dB
+---------------
+Average SSIM Val data: 0.6292
+Average PSNR Val data: 20.60 dB
+---------------
+Longitud de SSIM para la clave 5e-15-: 4300
+Longitud de SSIM para la clave 3e-17-: 4300
+Longitud de SSIM para la clave 1e-17-: 4300
+Longitud de SSIM para la clave 5e-17-: 4300
+Longitud de SSIM para la clave 1e-16-: 4300
+Longitud de SSIM para la clave 3e-16-: 4300
+Longitud de SSIM para la clave 5e-14-: 4300
+Longitud de SSIM para la clave 1e-15-: 4300
+Longitud de SSIM para la clave 7e-16-: 4300
+Longitud de SSIM para la clave 9e-15-: 4300
+Longitud de SSIM para la clave 9e-16-: 4300
+Longitud de SSIM para la clave 3e-14-: 4300
+Longitud de SSIM para la clave 5e-16-: 4300
+Longitud de SSIM para la clave 9e-14-: 4300
+Longitud de SSIM para la clave 9e-17-: 4300
+Longitud de SSIM para la clave 7e-14-: 4300
+Longitud de SSIM para la clave 7e-17-: 4300
+Longitud de SSIM para la clave 3e-15-: 4300
+Longitud de SSIM para la clave 7e-15-: 4300
+Longitud de SSIM para la clave 1e-14-: 4300
+averages para c!!!!!!!!!!!!!!!!:
+{'1e-14': {'SSIM': 0.4661961999105859, 'PSNR': 17.475337199344214}, '5e-15': {'SSIM': 0.5184579052644418, 'PSNR': 18.25016767235687}, '3e-17': {'SSIM': 0.6604166354835058, 'PSNR': 20.187203379298357}, '1e-17': {'SSIM': 0.6611705060712121, 'PSNR': 20.179174255969922}, '5e-17': {'SSIM': 0.6592319736972818, 'PSNR': 20.18197506645115}, '1e-16': {'SSIM': 0.6567795078983131, 'PSNR': 20.151750560649514}, '3e-16': {'SSIM': 0.6466847477056276, 'PSNR': 20.014403552875994}, '5e-14': {'SSIM': 0.3685246328933284, 'PSNR': 15.597193803875923}, '1e-15': {'SSIM': 0.6162141204563005, 'PSNR': 19.581323838699692}, '7e-16': {'SSIM': 0.6291525574673064, 'PSNR': 19.755523875059158}, '9e-15': {'SSIM': 0.473320804965704, 'PSNR': 17.597271459912125}, '9e-16': {'SSIM': 0.6205353173682839, 'PSNR': 19.636893548211358}, '3e-14': {'SSIM': 0.39491615963086113, 'PSNR': 16.18045816747528}, '5e-16': {'SSIM': 0.6373987440515388, 'PSNR': 19.880186534194074}, '9e-14': {'SSIM': 0.34213622209464395, 'PSNR': 14.938080386272693}, '9e-17': {'SSIM': 0.6570360567209329, 'PSNR': 20.158049283648662}, '7e-14': {'SSIM': 0.35307505237501746, 'PSNR': 15.210905171738126}, '7e-17': {'SSIM': 0.6583429398820858, 'PSNR': 20.16904402524371}, '3e-15': {'SSIM': 0.5553583292888343, 'PSNR': 18.76215048146802}, '7e-15': {'SSIM': 0.49253604241408727, 'PSNR': 17.87808133429147}}
+averages turbulence removed Averages:
+   Bin  Average SSIM  Average PSNR  Num Elements
+0    1      0.207893     15.136853           395
+1    2      0.295445     16.353628          3595
+2    3      0.392591     17.863739          8324
+3    4      0.503298     19.394620          9795
+4    5      0.621501     20.588340         15596
+5    6      0.713081     22.138363         21638
+6    7      0.785168     23.410947          6903
+7    8      0.869370     24.933400           554
+
+averages turbulence Averages:
+   Bin  Average SSIM  Average PSNR  Num Elements
+0    1      0.182158     13.732237           395
+1    2      0.261027     14.501291          3595
+2    3      0.352163     15.959240          8324
+3    4      0.451803     17.349099          9795
+4    5      0.555104     18.645379         15596
+5    6      0.648141     20.003834         21638
+6    7      0.735246     21.185170          6903
+7    8      0.834366     21.671452           554

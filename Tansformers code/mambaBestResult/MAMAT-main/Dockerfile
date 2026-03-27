@@ -1,0 +1,45 @@
+# PyTorch 2.3.1 + CUDA 11.8 + cuDNN **DEVEL** (incluye nvcc)
+FROM pytorch/pytorch:2.3.1-cuda11.8-cudnn8-devel
+
+ENV DEBIAN_FRONTEND=noninteractive \
+    PIP_NO_CACHE_DIR=1 \
+    PYTHONUNBUFFERED=1 \
+    MAX_JOBS=8
+
+WORKDIR /app
+
+# Paquetes del sistema necesarios para compilar extensiones
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential git curl ca-certificates \
+    pkg-config ffmpeg python3-opencv \
+    && rm -rf /var/lib/apt/lists/*
+
+# Python deps base
+RUN python -m pip install --upgrade pip setuptools==68.2.2 wheel==0.42.0 && \
+    python -m pip install \
+      pybind11 ninja \
+      einops==0.7.0 numpy==1.26.4 tqdm==4.66.1 \
+      imageio==2.33.1 pandas==2.2.1 pillow==10.1.0 \
+      scipy==1.12.0 scikit-image matplotlib \
+      transformers==4.57.0 \
+      # (opcional: el resto de tus libs)
+      decord==0.6.0 deepspeed==0.13.1 ftfy==6.1.3 \
+      fvcore==0.1.5.post20221221 omegaconf==2.3.0 \
+      opencv-python==4.8.1.78 packaging==24.0 \
+      pytest==8.1.2 PyYAML==6.0.1 regex==2023.10.3 \
+      requests==2.31.0 submitit==1.5.1 tensorboardX==2.6.2.2 \
+      termcolor==2.4.0 timm==0.4.12 wandb==0.16.2 \
+      pudb torchmetrics
+
+#  Compilar e instalar mamba-ssm y causal-conv1d (usa nvcc)
+RUN python -m pip install --no-build-isolation mamba-ssm==2.2.5 causal-conv1d==1.4.0
+
+# Sanity check (opcional)
+# RUN python - << 'PY'
+# from mamba_ssm import Mamba
+# import causal_conv1d, torch
+# print("OK ->", torch.__version__, "CUDA", torch.version.cuda)
+# PY
+
+CMD ["/bin/bash"]
+
